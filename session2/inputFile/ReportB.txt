@@ -1,0 +1,7 @@
+Participant 1 : nullParticipant 2 : nullParticipant 3 : nullParticipant 4 : nullParticipant 5 : null
+Participant 1 : nullParticipant 2 : nullParticipant 3 : nullParticipant 4 : nullParticipant 5 : null
+Participant 1 : nullParticipant 2 : nullParticipant 3 : nullParticipant 4 : nullParticipant 5 : null
+Participant 1 : [2, 2, 2, 2] Participant 2 : [2, 2, 2, 22] Participant 3 : [2, 2, , 2] Participant 4 : [22, 2, 2, 2] Participant 5 : [2, 2, 2, 2] 
+Participant 1 : [1, 1, 1, 1] Participant 2 : [1, 1, 1, 1] Participant 3 : [1, 1, 2, 1] Participant 4 : [1, 1, 3, 1] Participant 5 : [1, 1, 1, 1] 
+Participant 1 : [j, 1, 1, 1] Participant 2 : [1, 1, 2, 1] Participant 3 : [d, 2, 3, d] Participant 4 : [r, r, 4, f] Participant 5 : [f, f, 4, f] 
+Participant 1 : [q, q, 1, q] Participant 2 : [w, w, 2, w] Participant 3 : [e, e, 3, e] Participant 4 : [r, r, 3, r] Participant 5 : [t, t, 4, t] 

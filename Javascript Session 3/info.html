@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> Information </title>
+</head>
+<body>
+	<select>
+		<option id="1" value="first"> First </option>
+	</select>
+	<br>
+	<br>
+	<select>
+		<option id="2" value="second"> Second </option>
+	</select>
+	<br>
+	<br>
+	<input type="radio"  value="1" name="choice" onchange="display()">First value<br>
+    <input type="radio" value="2" name="choice" onchange="display()">Second value <br>
+	
+	<script>
+		function display() {
+		var radios = document.getElementsByName('choice');
+		for (var i = 0; i < radios.length ; i++) {
+		if (radios[i].checked) {
+			alert(document.getElementById(i+1).value);
+		}
+		}
+	}
+	</script>
+</body>
+</head>

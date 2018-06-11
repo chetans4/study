@@ -1,0 +1,115 @@
+
+.info-form{
+  margin: 10%;
+  background-color: #DCDCDC	;
+  padding: 10px 10px 40px 10px;
+}
+
+table{
+width: 100%;
+line-height: 40px;
+}
+
+th{
+  text-align: left;
+  font-weight: bold;
+}
+
+.i-field{
+  text-align: right;
+  width: 25%;
+  font-weight: bold;
+}
+.i-input{
+  padding-left: 20px;
+}
+i{
+  border-style: solid;
+  border-right-style: none;
+  border-width: thin;
+  border-color: #a6a8ad;
+  color: #515256;
+  padding: 6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 15px;
+}
+#btn-icon{
+  border-style: none;
+  color: white;
+}
+.btn-orange{
+  background-color: #f26b04;
+  color: white;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.btn-orange:hover {background-color: #DC7633}
+
+.btn-orange:active {
+  background-color: #DC7633;
+  box-shadow: 0 1px #DC7633;
+  transform: translateY(4px);
+}
+input{
+  padding: 8px 0px 5px 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #a6a8ad;
+  width: 8cm;
+}
+#hosting input {
+  border-style: none;
+  width: 0.5cm;
+}
+#hosting{
+  padding-left: 15px;
+}
+#pro-des i{
+  border-style: solid;
+  border-right-style: none;
+  border-width: thin;
+  border-color: #a6a8ad;
+  color: #515256;
+  padding: 23px 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 15px;
+  height: 20px;
+  position: relative;
+  top: -15px;
+}
+#project-desc{
+  padding: 8px 0px 5px 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #a6a8ad;
+  width: 300px;
+  height: 68px;
+  position: relative;
+  top: 15px;
+  resize: none;
+}
+select{
+  padding: 7px 0px 4px 6px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #a6a8ad;
+  width: 8cm;
+}
+input:invalid{
+  border-color: red;
+  border-width: thin;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 10px red;
+}

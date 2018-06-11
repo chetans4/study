@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>
+    Stack
+  </title>
+</head>
+<body>
+  <div>
+    <input type="text" id="input" placeholder="Enter input here">
+    <button id="add" >Push</button>
+    <button id="remove">Pop</button>
+  </div>
+  <div id="result">
+  </div>
+  <div id="messageArea">
+  </div>
+  <script>
+  var addBtn = document.getElementById('add');        
+  var removeBtn = document.getElementById('remove');  
+  var displayArea = document.getElementById('result'); 
+  var msgArea = document.getElementById('messageArea'); 
+  var inputData = document.getElementById('input');      
+
+
+  class Stack{
+		constructor(){
+		this.stackarray = [];
+		this.top = -1;
+		}
+  
+  	push(element){
+  	this.top++;
+  	this.stackarray[this.top] = element;
+    this.display();
+    inputData.value="";
+    msgArea.innerHTML="Element added";
+  	}
+    
+  	pop(){
+      if (this.top < 0){
+  			msgArea.innerHTML="Underflow";
+        return;
+  		}
+  	else{
+  			this.top--;
+  		}
+      this.display();
+      msgArea.innerHTML="Element removed";
+  }
+  
+	display(){
+    displayArea.innerHTML="<br>";
+		for (var i = this.top; i>=0; i--){
+			displayArea.innerHTML += (this.stackarray[i]) +"<br>";
+		}
+  }
+}
+var stack = new Stack();          
+addBtn.addEventListener("click" , function(){
+  if(inputData.value == ""){
+    msgArea.innerHTML="Enter a value";
+    return;
+  }
+  stack.push(inputData.value);
+});
+removeBtn.addEventListener("click" , function(){
+  stack.pop();
+});
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+1,Text,What is your name?
+2,Number,What is your mobile number?
+3,Single select,Rate the Software?,1/2/3/4/5
+4,Multiple select,Give your Feedback?,1. Appreciating Skills/2. Service Quality/3. Communication/4. Delivery Process

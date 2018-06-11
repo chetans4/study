@@ -1,0 +1,73 @@
+<html>
+<head>
+  <title>
+    Queue
+  </title>
+</head>
+<body>
+  <div>
+    <input type="text" id="input" placeholder="Enter input here">
+    <button id="enqueue">Add Element</button>
+    <button id="dequeue">Remove Element</button>
+  </div>
+  <div id="result">
+  </div>
+  <div id="messageArea">
+  </div>
+  <script>
+  var addBtn = document.getElementById('enqueue');       
+  var removeBtn = document.getElementById('dequeue');     
+  var displayArea = document.getElementById('result');    
+  var msgArea = document.getElementById('messageArea');   
+  var inputData = document.getElementById('input');       
+
+
+  class Queue{
+  	constructor(){
+  		this.queuearray = [];
+  		this.front = 0;
+  		this.rear = -1;
+  	}
+    
+  enqueue(element){
+  	this.rear++;
+  	this.queuearray[this.rear] = element;
+    this.display();
+    inputData.value="";
+    msgArea.innerHTML="Element added";
+  }
+    
+  dequeue(){
+  	if( this.front > this.rear) {
+      msgArea.innerHTML="Underflow";
+      return;
+  	}
+  	else{
+  		this.front++;
+  	}
+    this.display();
+    msgArea.innerHTML="Element removed";
+  }
+ 
+  display(){
+    displayArea.innerHTML="<br>";
+    for (var i = this.front; i <= this.rear; i++){
+      displayArea.innerHTML += (this.queuearray[i]) +"-->";
+    }
+    displayArea.innerHTML += "null";
+  }
+  }
+  var q = new Queue();                          
+  addBtn.addEventListener("click" , function(){
+    if(inputData.value == ""){
+      msgArea.innerHTML="Enter a value";
+      return;
+    }
+    q.enqueue(inputData.value);
+  });
+  removeBtn.addEventListener("click" , function(){
+    q.dequeue();
+  });
+  </script>
+</body>
+</html>

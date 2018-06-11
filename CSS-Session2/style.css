@@ -1,0 +1,41 @@
+.translate{
+	width:100px;
+    height:100px;
+    background: red;
+	margin-right: auto;
+    margin-left: auto;
+}
+.translate:hover{
+	transform: translate(100px,50px);
+	transition: 0.7s;
+}
+.rotate{
+	width:100px;
+    height:100px;
+    background: green;
+	margin-right: auto;
+    margin-left: auto;
+}
+.rotate:hover{
+	 transform: rotate(60deg);
+}
+.skew{
+	width:100px;
+    height:100px;
+    background: blue;
+	margin-right: auto;
+    margin-left: auto; 
+}
+.skew:hover{
+	transform: skew(20deg,20deg);
+}
+.scale{
+	width:100px;
+    height:100px;
+    background: cyan;
+	margin-right: auto;
+    margin-left: auto;
+}
+.scale:hover{
+	transform: scale(1.5,1.5);
+}

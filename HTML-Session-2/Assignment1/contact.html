@@ -1,0 +1,157 @@
+<!--DOCTYPE html -->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+      Contact Us
+    </title>
+  </head>
+  <body>
+    <div class="info-form">
+      <table>
+         <tr>
+          <th colspan="2">
+            Contact Us Today!
+          </th>
+        </tr>
+		<form>
+        <tr>
+          <td class="i-field">
+            First Name
+          </td>
+          <td class="i-input">
+            <i class="fa fa-user"></i><input type="text" id="fname" placeholder="First Name" pattern="[A-Za-z]+">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Last Name
+          </td>
+          <td class="i-input">
+            <i class="fa fa-user"></i><input type="text" id="lname" placeholder="Last Name" pattern="[A-Za-z]+">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            E-Mail
+          </td>
+          <td class="i-input">
+            <i class="fa fa-envelope"></i><input type="email" id="email" placeholder="E-Mail Address" >
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Phone #
+          </td>
+          <td class="i-input">
+            <i class="fa fa-phone"></i><input type="tel" id="mobile" placeholder="(855)649-1212" pattern="[0-9]{10}">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Address
+          </td>
+          <td class="i-input">
+            <i class="fa fa-home"></i><input type="text" id="address" placeholder="Address">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            City
+          </td>
+          <td class="i-input">
+            <i class="fa fa-home"></i><input type="text" id="city" placeholder="City" pattern="[A-Za-z]+">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            State
+          </td>
+          <td class="i-input">
+            <i class="fa fa-list"></i><select>
+              <option value="-1">Please select your state</option>
+              <option value="-1">Andhra Pradesh</option>
+              <option value="-1">Arunachal Pradesh</option>
+              <option value="-1">Assam</option>
+              <option value="-1">Bihar</option>
+              <option value="-1">Chhattisgarh</option>
+              <option value="-1">Goa</option>
+              <option value="-1">Gujarat</option>
+              <option value="-1">Haryana</option>
+              <option value="-1">Himachal Pradesh</option>
+              <option value="-1">Jammu and Kashmir</option>
+              <option value="-1">Jharkhand</option>
+              <option value="-1">Karnataka</option>
+              <option value="-1">Kerala</option>
+              <option value="-1">Madhya Pradesh</option>
+              <option value="-1">Maharashtra</option>
+              <option value="-1">Manipur</option>
+              <option value="-1">Meghalaya</option>
+              <option value="-1">Mizoram</option>
+              <option value="-1">Nagaland</option>
+              <option value="-1">Odisha</option>
+              <option value="-1">Punjab</option>
+              <option value="-1">Rajasthan</option>
+              <option value="-1">Sikkim</option>
+              <option value="-1">Tamil Nadu</option>
+              <option value="-1">Telangana</option>
+              <option value="-1">Tripura</option>
+              <option value="-1">Uttarakhand</option>
+              <option value="-1">Uttar Pradesh</option>
+              <option value="-1">West Bengal</option>
+              <option value="-1">Andaman and Nicobar Islands</option>
+              <option value="-1">Chandigarh</option>
+              <option value="-1">Dadra and Nagar Haveli</option>
+              <option value="-1">Daman and Diu</option>
+              <option value="-1">Delhi</option>
+              <option value="-1">Lakshadweep</option>
+              <option value="-1">Puducherry</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Zip Code
+          </td>
+          <td class="i-input">
+            <i class="fa fa-home"></i><input type="text" id="zip" placeholder="Zip Code" pattern="[0-9]{6}">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Website or domain name
+          </td>
+          <td class="i-input">
+            <i class="fa fa-globe"></i><input type="url" id="website" placeholder="Website or domain name" pattern="https?://.+">
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Do you have hosting?
+          </td>
+          <td id="hosting" style="line-height: normal;">
+            <input type="radio" name="hosting" value="Yes"> Yes<br>
+            <input type="radio" name="hosting" value="No" > No<br>
+          </td>
+        </tr>
+        <tr>
+          <td class="i-field">
+            Project Description
+          </td>
+          <td class="i-input" id="pro-des">
+            <i class="fa fa-pencil"></i><textarea id="project-desc" placeholder="Project Description"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td id="hosting" style="line-height: normal;">
+            <button class="btn-orange" type="submit">Send <i class="fa fa-paper-plane" id="btn-icon"></i></button>
+          </td>
+        </tr>
+		</form>
+      </table>
+    </div>
+  </body>
+  </html>

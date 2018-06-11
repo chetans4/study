@@ -1,0 +1,55 @@
+#collapse-menu ul{
+  list-style:none;
+  margin-top:20px;
+
+}
+#collapse-menu ul li{
+  display:block;
+  display: none;
+  background-color: #EDEDED;
+  height:20px;
+  padding:10px;
+  border-top:1px solid rgba(0,0,0,.1);
+  transition: height 200ms;
+  opacity:0;
+}
+#collapse-menu ul li:hover{
+  background:#999;
+}
+#collapse-menu ul li:last-child{
+  border-bottom-left-radius:4px;
+  border-bottom-right-radius:4px;
+}
+#collapse-menu ul label:before{
+  height:2px;
+  width:20px;
+  background:#333;
+  display:inline-block;
+  content:"";
+  box-shadow:0px -5px 0px 0px  #333,
+             0px -10px 0px 0px #333;
+  margin-right:10px;
+  transition:all .5s;
+  position:relative;
+  opacity:1;
+}
+#collapse-menu ul label{
+  display:block;
+  padding:10px;
+  color:black;
+  cursor:pointer;
+}
+input[type="checkbox"]{
+  visibility:hidden;
+  position:absolute;
+}
+#collapse-menu ul #collapse:checked ~ li{
+  display: block;
+  margin-top:0;
+  opacity:1;
+}
+#collapse-menu ul #collapse:checked + label:before{
+  position:relative;
+  opacity:0.5;
+
+}
